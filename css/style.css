@@ -1,0 +1,107 @@
+@import url(reset.css);
+
+body {
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url(../images/pattern-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 90px 0;
+  margin-bottom: 30px;
+}
+.banner h1 {
+  font-size: 2.5em;
+  color: white;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.searchbar input {
+  width: 500px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding-left: 20px;
+  font-size: 1.2em;
+  font-family: "Rubik", sans-serif;
+}
+
+.searchbar button {
+  width: 60px;
+  height: 52px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: hsl(0, 0%, 17%);
+  color: white;
+  font-size: 1.2em;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 40px 20px 40px 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  z-index: 2;
+  font-weight: 500;
+}
+
+.container div {
+  flex: 1;
+  text-align: center;
+}
+
+#mapid {
+  position: absolute;
+  top: 43%;
+  height: 57vh;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 20px;
+  }
+  .container div {
+    margin-bottom: 20px;
+  }
+  #mapid {
+    height: 50vh;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 25%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
